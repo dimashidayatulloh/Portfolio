@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio | Dimas</title>
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- external lib -->
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body id="home">
+        <!-- Navbar -->
+        <header >
+            <nav >
+                <a href="#" class="logo"><span>D</span>imas <span>H</span>.</a>
+                <ul class="navlist">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </nav>
+        </header>
+
+        <!-- Jumbotron -->
+        <section class="home">
+            <div class="thumb">
+                <img src="img/profil.jpg" alt="profil" />
+            </div>
+            <div class="name">
+                <em><p>Hello, I'm</p></em>
+                <h2>Dimas Hidayatulloh</h2>
+                <h4>Student | <span class="type"></span></h4>
+            </div>
+            <!-- icons -->
+            <div class="icons">
+                <ul>
+                    <li><a href="https://facebook.com/dimzfrando" class="fab fa-facebook-f" target="_blank"></a href="#"></li>
+                    <li><a href="https://twitter.com/dimas_frando" class="fab fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/dimas.frando/" class="fab fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://github.com/dimashidayatulloh" class="fab fa-github" target="_blank"></a></li>
+                    <li><a href="https://www.youtube.com/@dimasfrando6105" class="fab fa-youtube" target="_blank"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="row">
+                <h2>About Me</h2>
+            </div>
+            <div class="row">
+                <p>I'm currently study computer science at Pasundan University.<br> I am an enthusiastic, self-motivated, reliable, responsible <br> and hard working person.</p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card-wrapper">
+                <div class="card" data-aos="zoom-in-right">
+                    <img src="img/js.png" alt="Javascript" style="width: 100%" />
+                    <div class="container">
+                        <h3>Javascript</h3>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <input type="submit" value="Show Detail" style="font-weight: bold; font-size: medium" />
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <img src="img/php.png" alt="PHP" style="width: 100%" />
+                    <div class="container">
+                        <h3>PHP</h3>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <input type="submit" value="Show Detail" style="font-weight: bold; font-size: medium" />
+                </div>
+                <div class="card" data-aos="zoom-in-left">
+                    <img src="img/csharp.png" alt="C#" style="width: 100%" />
+                    <div class="container">
+                        <h3>C#</h3>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <input type="submit" value="Show Detail" style="font-weight: bold; font-size: medium" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="container">
+                <form name="submit-to-google-sheet">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required/>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required/>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="message" placeholder="Write something" required style="height: 200px"></textarea>
+                    <input type="submit" value="Send" style="font-weight: bold; font-size: medium" />
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p style="text-align: center">Copyright &copy; 2022 | Designed By Dimas Hidayatulloh</p>
+        </footer>
+
+        <!-- script js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

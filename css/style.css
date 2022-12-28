@@ -1,0 +1,335 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background: #000;
+    color: white;
+}
+
+/* Style */
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+nav a span {
+    color: red;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding-top: 10rem;
+}
+
+.thumb {
+    text-align: center;
+}
+
+.thumb img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid gold;
+}
+
+.name {
+    margin: 30px 0 50px 0;
+    text-align: center;
+}
+.name span {
+    color: red;
+}
+
+/* icons */
+.icons ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.icons ul li {
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icons ul li:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(0.9);
+    z-index: -1;
+    transition: 0.5s;
+}
+.icons ul li:nth-child(1):before {
+    background: #4267b2;
+}
+.icons ul li:nth-child(2):before {
+    background: #1da1f2;
+}
+.icons ul li:nth-child(3):before {
+    background: #e1306c;
+}
+.icons ul li:nth-child(4):before {
+    background: #fff;
+}
+.icons ul li:nth-child(5):before {
+    background: #ff0000;
+}
+.icons ul li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+.icons ul li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #4267b2;
+}
+.icons ul li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px #1da1f2;
+}
+.icons ul li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #e1306c;
+}
+.icons ul li:nth-child(4):hover:before {
+    box-shadow: 0 0 15px #fff;
+}
+.icons ul li:nth-child(5):hover:before {
+    box-shadow: 0 0 15px #ff0000;
+}
+.icons ul li:nth-child(1):hover {
+    color: #456cba;
+    box-shadow: 0 0 15px #4267b2;
+    text-shadow: 0 0 15px #4267b2;
+}
+.icons ul li:nth-child(2):hover {
+    color: #26a4f2;
+    box-shadow: 0 0 15px #1da1f2;
+    text-shadow: 0 0 15px #1da1f2;
+}
+.icons ul li:nth-child(3):hover {
+    color: #e23670;
+    box-shadow: 0 0 15px #e1306c;
+    text-shadow: 0 0 15px #e1306c;
+}
+.icons ul li:nth-child(4):hover {
+    color: #2a6cbb;
+    box-shadow: 0 0 15px #fff;
+    text-shadow: 0 0 15px #fff;
+}
+.icons ul li:nth-child(5):hover {
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+}
+
+#about {
+    text-align: center;
+}
+
+.row h2 {
+    padding-bottom: 25px;
+}
+
+#projects {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 1rem 5%;
+    transition: 0.3s;
+    width: 300px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 0px 10px 2px white;
+}
+
+.card img {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .container {
+    padding: 0 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: goldenrod;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: gold;
+}
+
+#contact .container {
+    border-radius: 5px;
+    padding: 0 10rem 0 10rem;
+}
+
+footer {
+    margin: 100px 0 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 1500px) {
+    header {
+        padding: 15px;
+        transition: 0.2s;
+    }
+    .icon {
+        padding: 0;
+        transition: 0.2s;
+    }
+    .scroll-down {
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all 0.55s ease;
+    }
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding-top: 5rem;
+    }
+    .row p {
+        font-size: small;
+    }
+    .card-wrapper {
+        flex-direction: column;
+        padding-left: 4%;
+    }
+    .card {
+        width: 85%;
+    }
+    .card p {
+        font-size: small;
+    }
+    #contact .container {
+        padding: 0 10px 0 10px;
+    }
+    .icons ul li {
+        position: relative;
+        display: block;
+        color: #666;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        background: #171515;
+        line-height: 40px;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
