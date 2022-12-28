@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
             console.log("Success!", response);
-            alert("Message sent Succesfully");
+            alert("Message sent succesfully :)");
             form.reset();
         })
         .catch((error) => {
