@@ -181,6 +181,53 @@ section {
     padding-bottom: 25px;
 }
 
+.skill {
+    background-color: #000;
+    width: 80%;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+}
+.skill h1 {
+    text-align: center;
+}
+.skill ul li h3 {
+    margin: 5px;
+}
+.bar {
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background-color: red;
+}
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+.css {
+    width: 70%;
+    animation: css 3s;
+}
+.javascript {
+    width: 45%;
+    animation: javascript 3s;
+}
+.php {
+    width: 25%;
+    animation: php 3s;
+}
+.csharp {
+    width: 30%;
+    animation: csharp 3s;
+}
+
 #projects {
     margin-bottom: 50px;
     text-align: center;
@@ -189,6 +236,7 @@ section {
 .card-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -305,12 +353,8 @@ footer {
     .row p {
         font-size: small;
     }
-    .card-wrapper {
-        flex-direction: column;
-        padding-left: 4%;
-    }
     .card {
-        width: 85%;
+        width: 100%;
     }
     .card p {
         font-size: small;
@@ -331,5 +375,50 @@ footer {
         margin: 0 10px;
         cursor: pointer;
         transition: 0.5s;
+    }
+    .skill {
+        width: 100%;
+    }
+}
+
+/* skill bar animation */
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 45%;
+    }
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
     }
 }
