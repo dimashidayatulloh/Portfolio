@@ -182,7 +182,6 @@ section {
 }
 
 .skill {
-    background-color: #000;
     width: 80%;
     margin: 60px auto;
     color: #fff;
@@ -200,7 +199,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 3px rgba(255, 255, 255, 1);
-    /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .bar span {
     height: 20px;
